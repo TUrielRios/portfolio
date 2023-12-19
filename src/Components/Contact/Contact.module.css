@@ -1,0 +1,28 @@
+/* Contact.module.css */
+.contact {
+    padding: 40px;
+
+  }
+  .contact h2 {
+    text-align: center;
+
+  }
+  .contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+  }
+  .contact p a{
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+  }
+  .icon {
+    width: 40px; /* Ajusta el tamaño de los íconos según sea necesario */
+    height: 40px;
+    margin: 10px; /* Ajusta el espacio entre los íconos */
+  }
+  
+  .icon:hover {
+    opacity: 0.8; /* Cambia la opacidad al pasar el ratón sobre los íconos */
+  }
