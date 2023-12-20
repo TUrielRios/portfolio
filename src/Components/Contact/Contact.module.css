@@ -1,28 +1,35 @@
 /* Contact.module.css */
 .contact {
-    padding: 40px;
+  padding: 20px; /* Reducir el relleno para pantallas más pequeñas */
+}
 
-  }
-  .contact h2 {
-    text-align: center;
+.contact h2 {
+  text-align: center;
+  font-size: 2em; /* Aumentar el tamaño del título */
+  margin-bottom: 20px; /* Aumentar el margen inferior del título */
+}
 
-  }
-  .contact p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
-  }
-  .contact p a{
-    font-size: 1em;
-    line-height: 1.6;
-    color: #555;
-  }
-  .icon {
-    width: 40px; /* Ajusta el tamaño de los íconos según sea necesario */
-    height: 40px;
-    margin: 10px; /* Ajusta el espacio entre los íconos */
-  }
-  
-  .icon:hover {
-    opacity: 0.8; /* Cambia la opacidad al pasar el ratón sobre los íconos */
-  }
+.contact p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+  text-align: center; /* Centrar el texto en pantallas más pequeñas */
+}
+
+.contact p a {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  display: block; /* Convertir los enlaces en bloques para mejorar la legibilidad */
+  margin-top: 10px; /* Añadir espacio superior entre los enlaces */
+}
+
+.icon {
+  width: 30px; /* Reducir el tamaño de los íconos para pantallas más pequeñas */
+  height: 30px;
+  margin: 10px; /* Ajustar el espacio entre los íconos */
+}
+
+.icon:hover {
+  opacity: 0.8;
+}

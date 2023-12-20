@@ -1,30 +1,31 @@
 /* Projects.module.css */
 .projects {
-  max-width: 800px;
+  max-width: 80vw; /* Ajustar el ancho máximo para pantallas más pequeñas */
   margin: 0 auto;
-  text-align: left;
-  padding: 40px;
+  text-align: center;
+  padding: 20px; /* Reducir el relleno para evitar saturar en pantallas más pequeñas */
 }
 
 .projectList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -10px; /* Agrega un margen negativo para reducir el espacio entre las tarjetas */
+  margin: -5px; /* Ajustar el margen negativo para reducir el espacio entre las tarjetas */
   gap: 5vw;
 }
-h2{
-    font-size: 1.5em;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+h2 {
+    font-size: 1.5em; /* Aumentar el tamaño del título */
     letter-spacing: 5px;
     margin-bottom: 10px;
     color: rgb(78, 155, 129);
     margin-left: 2.2vw;
     text-transform: uppercase;
 }
+
 .projectCard {
-  width: 280px; /* Reducir el ancho para tener tarjetas más juntas */
-  margin: 10px; /* Ajustar el margen para las tarjetas más cercanas */
+  width: 25vw; /* Hacer las tarjetas del 100% del ancho en pantallas más pequeñas */
+  margin: 5px; /* Reducir el margen para tarjetas más cercanas */
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -40,19 +41,30 @@ h2{
 
 .projectImage {
   width: 100%;
-  height: 180px; /* Reducir la altura de la imagen */
+  height: 180px;
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 10px;
 }
 
 .projectInfo h3 {
-  font-size: 1.5em;
+  font-size: 1.8em; /* Aumentar el tamaño del subtítulo */
   margin-bottom: 10px;
 }
 
 .projectInfo p {
-  font-size: 1em;
+  font-size: 1.2em; /* Aumentar el tamaño del texto */
   color: #555;
   line-height: 1.6;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+  .projectCard {
+    width: 100%; /* Hacer las tarjetas del 100% del ancho en pantallas más pequeñas */
+  }
+
+  .h2 {
+    margin-left: 0; /* Ajustar el margen izquierdo del título */
+  }
 }

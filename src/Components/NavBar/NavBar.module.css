@@ -1,56 +1,67 @@
 /* Header.module.css */
 .header {
-    background-color: white;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .header h1 {
-    margin: 5vh;
-    color: #343434;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 5px;
-    text-shadow: #343434;
-  }
-  
+  background-color: white;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 5vh;
+  color: #343434;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navItem {
+  color: #343434;
+  text-decoration: none;
+  margin: 0 20px;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.navItem:hover {
+  color: rgb(78, 155, 129);
+}
+
+.navItem::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: rgb(78, 155, 129);
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navItem:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
   .navbar {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
   }
-  
+
   .navItem {
-    color: #343434;
-    text-decoration: none;
-    margin: 0 20px;
-    position: relative;
-    cursor: pointer;
-    transition: color 0.3s;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+      margin: 10px 0;
   }
-  
-  .navItem:hover {
-    color: rgb(78, 155, 129);
-  }
-  
-  .navItem::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0;
-    background-color: rgb(78, 155, 129);
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transition: width 0.3s ease, left 0.3s ease;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .navItem:hover::after {
-    width: 100%;
-    left: 0;
-  }
-  
+}
