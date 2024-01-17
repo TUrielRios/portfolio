@@ -12,7 +12,7 @@ const projectsData = [
       title: 'Architectural Studio Project',
       description: 'Work project for an architectural studio in Buenos Aires, Argentina. Developed entirely individually.',
       image: project1Image,
-      link: 'https://defranciscoestudio.netlify.app', // Ruta a la página del proyecto
+      link: 'https://defranciscoestudio.vercel.app', // Ruta a la página del proyecto
     },
     {
       title: 'WikiPokemon',
