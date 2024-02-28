@@ -14,6 +14,9 @@ const Contact = () => {
 
   return (
     <section id="contact" className={styles.contact}>
+            <button className={styles.languageButton} onClick={toggleLanguage}>
+        {isSpanish ? 'Switch to English' : 'Cambiar a Español'}
+      </button>
       <h2>{isSpanish ? '¡Contáctame!' : 'Contact me!'}</h2>
       <p>{isSpanish ? '¡Estoy emocionado de saber sobre tu próximo proyecto! Hablemos sobre cómo puedo ayudarte.' : "I'm excited to hear about your upcoming project! Let's talk about how can I help you."}</p>
       {/* Add your contact form or contact information here */}
@@ -30,9 +33,7 @@ const Contact = () => {
       <a href="https://www.linkedin.com/in/tiziano-rios-049b5b264/" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="LinkedIn" className={styles.icon} />
       </a>
-      <button className={styles.languageButton} onClick={toggleLanguage}>
-        {isSpanish ? 'Switch to English' : 'Cambiar a Español'}
-      </button>
+
     </section>
   );
 }
