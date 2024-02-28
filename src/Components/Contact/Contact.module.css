@@ -33,3 +33,21 @@
 .icon:hover {
   opacity: 0.8;
 }
+
+.languageButton {
+  background-color: rgb(78, 155, 129); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.languageButton:hover {
+  background-color: rgb(31, 73, 33) 155, 129;
+}
