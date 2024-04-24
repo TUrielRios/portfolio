@@ -57,7 +57,7 @@ const Contact = () => {
         message: messages,
       });
       setSuccessMsg(
-        `Hello dear ${clientName}, Your messages has been sent successfully. Thank you for your time!`
+        `Hola querido ${clientName}, tu mensaje ha sido envíado con éxito. Gracias por tu tiempo!`
       );
       setClientName("");
       setEmail("");
@@ -66,20 +66,20 @@ const Contact = () => {
   };
   return (
     <div className="w-full">
-      <Title title="Get" subTitle="in Touch" />
+      <Title title="Cuenta" subTitle="conmigo" />
       <div className="p-6 w-full flex flex-col md:flex-row justify-between gap-4 md:gap-10 lgl:gap-20">
         <div className="w-full lgl:w-1/2">
           <p className="flex gap-6 justify-between w-full text-lg text-[#ccc] py-4 border-b-[1px] border-b-zinc-800">
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
-              Address:
+              Dirección:
             </span>
-            Muscat, Oman
+            Buenos Aires
           </p>
           <p className="flex justify-between w-full text-lg text-[#ccc] py-4 border-b-[1px] border-b-zinc-800">
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
-              Phone:
+              Teléfono:
             </span>
-            +968 97859628
+            +54 11 6889 0924
           </p>
         </div>
         <div className="w-full lgl:w-1/2">
@@ -87,18 +87,18 @@ const Contact = () => {
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
               Email:
             </span>
-            noor.jsdivs@gmail.com
+            riostiziano6@gmail.com
           </p>
           <p className="flex justify-between w-full text-lg text-[#ccc] py-4 border-b-[1px] border-b-zinc-800">
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
-              Freelance:
+              Disponibilidad:
             </span>
-            Abailable
+            Inmediata
           </p>
         </div>
       </div>
       <div className="w-full mt-10">
-        <Title title="Send" subTitle="Messages" />
+        <Title title="Enviar" subTitle="mensajes" />
         {seuccessMsg ? (
           <p className="text-center text-base font-titleFont p-20 text-designColor">
             {seuccessMsg}
@@ -121,7 +121,7 @@ const Contact = () => {
                 } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300`}
                 // className="w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 border-zinc-600 focus-visible:border-designColor outline-none duration-300"
                 type="text"
-                placeholder="Full Name"
+                placeholder="Nombre completo"
               />
               <input
                 onChange={handleEmail}
@@ -132,7 +132,7 @@ const Contact = () => {
                     : "border-zinc-600 focus-visible:border-designColor"
                 } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300`}
                 type="email"
-                placeholder="Email Address"
+                placeholder="Correo electrónico"
               />
             </div>
             <textarea
@@ -143,14 +143,14 @@ const Contact = () => {
                   ? "border-red-600 focus-visible:border-red-600"
                   : "border-zinc-600 focus-visible:border-designColor"
               } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300 resize-none`}
-              placeholder="Your Message"
+              placeholder="Tu mensaje"
               rows="4"
             ></textarea>
             <button
               onClick={handleSend}
               className="text-base w-44 flex items-center gap-1 text-gray-200 hover:text-designColor duration-200"
             >
-              Send Message{" "}
+              Enviar Mensaje{" "}
               <span className="mt-1 text-designColor">
                 <FiSend />
               </span>

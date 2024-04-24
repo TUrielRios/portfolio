@@ -1,18 +1,17 @@
 import React from "react";
 import Title from "../home/Title";
 import AboutMe from "./AboutMe";
-import FunFact from "./FunFact";
+
 import MyServices from "./MyServices";
 
 const About = () => {
   return (
     <section id="about" className="w-full">
-      <Title title="About" subTitle="Me" />
+      <Title title="Sobre" subTitle="Mi" />
       <AboutMe />
-      <Title title="My" subTitle="Services" />
+      <Title title="Mis" subTitle="Servicios" />
       <MyServices />
-      <Title title="Fun" subTitle="Fact" />
-      <FunFact />
+
     </section>
   );
 };

@@ -3,13 +3,12 @@ import { motion } from "framer-motion";
 import { FaUser, FaEnvelope } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
 import { MdWork, MdOutlineClose } from "react-icons/md";
-import { SiGooglechat } from "react-icons/si";
 import { BsTelephonePlusFill } from "react-icons/bs";
 import Left from "./components/home/Left";
 import About from "./components/about/About";
 import Resume from "./components/resume/Resume";
 import Projects from "./components/projects/Projects";
-import Blog from "./components/blog/Blog";
+
 import Contact from "./components/contact/Contact";
 import Sidenav from "./components/home/sidenav/Sidenav";
 
@@ -17,7 +16,7 @@ const Home = () => {
   const [about, setAbout] = useState(true);
   const [resume, setResume] = useState(false);
   const [projects, setProjects] = useState(false);
-  const [blog, setBlog] = useState(false);
+
   const [contact, setContact] = useState(false);
   const [sidenav, setSidenav] = useState(false);
   const ref = useRef();
@@ -77,7 +76,7 @@ const Home = () => {
               setAbout(true) &
               setResume(false) &
               setProjects(false) &
-              setBlog(false) &
+
               setContact(false)
             }
             className={`${
@@ -89,7 +88,7 @@ const Home = () => {
           >
             <FaUser />
             <span className="text-black font-medium text-xs uppercase bg-designColor px-4 py-[1px] rounded-xl absolute left-0 translate-x-8 group-hover:translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
-              About
+              Sobre mi
             </span>
           </span>
           {/* Resume Icon */}
@@ -98,7 +97,6 @@ const Home = () => {
               setAbout(false) &
               setResume(true) &
               setProjects(false) &
-              setBlog(false) &
               setContact(false)
             }
             className={`${
@@ -109,7 +107,7 @@ const Home = () => {
           >
             <IoIosPaper />
             <span className="text-black font-medium text-xs uppercase bg-designColor px-4 py-[1px] rounded-xl absolute left-0 translate-x-8 group-hover:translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
-              Resume
+              CV
             </span>
           </span>
           {/* Project Icon */}
@@ -118,7 +116,6 @@ const Home = () => {
               setAbout(false) &
               setResume(false) &
               setProjects(true) &
-              setBlog(false) &
               setContact(false)
             }
             className={`${
@@ -129,36 +126,16 @@ const Home = () => {
           >
             <MdWork />
             <span className="text-black font-medium text-xs uppercase bg-designColor px-4 py-[1px] rounded-xl absolute left-0 translate-x-8 group-hover:translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
-              Projects
+              Proyectos
             </span>
           </span>
-          {/* Blog Icon */}
-          <span
-            onClick={() =>
-              setAbout(false) &
-              setResume(false) &
-              setProjects(false) &
-              setBlog(true) &
-              setContact(false)
-            }
-            className={`${
-              blog
-                ? "text-designColor"
-                : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
-            } w-full h-6 text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group`}
-          >
-            <SiGooglechat />
-            <span className="text-black font-medium text-xs uppercase bg-designColor px-4 py-[1px] rounded-xl absolute left-0 translate-x-8 group-hover:translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
-              Blog
-            </span>
-          </span>
+          
           {/* Contact Icon */}
           <span
             onClick={() =>
               setAbout(false) &
               setResume(false) &
               setProjects(false) &
-              setBlog(false) &
               setContact(true)
             }
             className={`${
@@ -169,15 +146,18 @@ const Home = () => {
           >
             <FaEnvelope />
             <span className="text-black font-medium text-xs uppercase bg-designColor px-4 py-[1px] rounded-xl absolute left-0 translate-x-8 group-hover:translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
-              Contact
+              Contacto
             </span>
           </span>
-          <span className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group">
-            <BsTelephonePlusFill />
-            <span className="text-black font-medium text-xs uppercase bg-designColor px-4 py-[1px] rounded-xl absolute left-0 translate-x-8 group-hover:translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
-              Call
+          <a href="tel:1168890924">
+            <span className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group">
+              <BsTelephonePlusFill />
+              <span className="text-black font-medium text-xs uppercase bg-designColor px-4 py-[1px] rounded-xl absolute left-0 translate-x-8 group-hover:translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
+                Llamar
+              </span>
             </span>
-          </span>
+          </a>
+
         </div>
         {/* ======= Other Icons End */}
       </div>
@@ -192,7 +172,6 @@ const Home = () => {
             <About />
             <Resume />
             <Projects />
-            <Blog />
             <Contact />
           </div>
           {/* ======================== Smaller device content End ========================== */}
@@ -225,15 +204,7 @@ const Home = () => {
                 <Projects />
               </motion.div>
             )}
-            {blog && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Blog />
-              </motion.div>
-            )}
+
             {contact && (
               <motion.div
                 initial={{ opacity: 0 }}

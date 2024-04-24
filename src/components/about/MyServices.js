@@ -10,23 +10,23 @@ const MyServices = () => {
     <div className="grid grid-cols-1 md:grid-cols-2">
       <ServicesCard
         icons={<BiCodeAlt />}
-        title="Web Development"
-        subTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident. Accusamus at dolorem expedita dicta."
+        title="Desarrollo Frontend"
+        subTitle="Diseño y desarrollo de interfaces de usuario atractivas y receptivas utilizando tecnologías como React, Next.js y Redux Toolkit."
       />
       <ServicesCard
         icons={<SiAntdesign />}
-        title="Web Design"
-        subTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident. Accusamus at dolorem expedita dicta."
+        title="Backend y APIs"
+        subTitle="Creación de robustos servidores backend y APIs utilizando Node.js, Express y Sequelize. APIs RESTful para la comunicación entre frontend y backend."
       />
       <ServicesCard
         icons={<AiTwotoneAppstore />}
-        title="Mobile Application"
-        subTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident. Accusamus at dolorem expedita dicta."
+        title="Desarrollo móvil"
+        subTitle="Desarrollo nativo con React Native y Flutter para iOS y Android. Diseño y desarrollo de aplicaciones móviles funcionales y visualmente atractivas."
       />
       <ServicesCard
         icons={<FaAppStoreIos />}
-        title="SEO"
-        subTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident. Accusamus at dolorem expedita dicta."
+        title="Rendimiento"
+        subTitle="Mejora continua del rendimiento de aplicaciones web y móviles para garantizar una experiencia de usuario rápida y eficiente."
       />
     </div>
   );

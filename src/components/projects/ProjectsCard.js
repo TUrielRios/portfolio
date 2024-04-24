@@ -14,7 +14,7 @@ const ProjectsCard = ({ image, title, category }) => {
       <h3 className="font-titleFont text-lg font-semibold text-[#ccc]">
         {title}
       </h3>
-      <p className="text-base text-gray-400 -mt-1">{category}</p>
+      <p className="text-base text-gray-400 -mt-1 text-center">{category}</p>
     </div>
   );
 };
